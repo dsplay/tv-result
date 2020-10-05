@@ -1,0 +1,140 @@
+.container-fluid {
+
+display: flex; 
+justify-content: flex-end;
+
+
+}
+
+.placar-style-home {
+
+background: #555854;
+color: #fcfffd;
+border-radius: 8px;
+font-size: 1rem;
+padding: 6px;
+margin-right: 3%;
+
+}
+
+.placar-style-away {
+
+background: #555854;
+color: #fcfffd;
+border-radius: 8px;
+font-size: 1rem;
+padding: 6px;
+margin-right: 3%;
+    
+    
+}
+    
+
+
+.div-linha {
+
+border-bottom: 1px solid rgb(128, 127, 127);
+margin-top: 5%;
+width: 150%;
+margin-left: -20%;
+
+
+}
+
+.div-linha-games {
+
+border-bottom: 1px solid  rgb(128, 127, 127);
+margin-top: 0%;
+width: 116%;
+margin-left: 1%;
+    
+ }
+
+.div-result-games {
+
+background-color: #3b3d3a;
+display: flex;
+justify-content: center;
+height: 700px;
+width: 320px;
+color: white;
+overflow: auto;
+margin-left: -1%;
+max-height: 700px;
+max-width: 320px;
+font-size: 15px;
+top: 25%;
+
+
+}
+
+.games-results {
+ 
+margin-top: 5%;
+margin-left: -22%;
+
+}
+
+
+.games-results-names {
+
+margin-bottom: 2%;
+margin-top: 2%;
+
+}
+
+
+.tournament {
+
+display: flex;  
+justify-content: center;
+color: #ffd643;
+font-size: 16px;
+margin-top: 5%;
+
+
+}
+
+.country  {
+
+display: flex;  
+justify-content: center;
+font-size: 18px;
+
+}
+
+.games-results-home {
+
+font-size: 18px;
+    
+}
+
+.games-results-away {
+
+font-size: 18px;
+
+}
+
+
+@media screen and (max-width: 975px) {
+ 
+
+.div-result-games {
+
+background-color: #3b3d3a;
+display: flex;
+justify-content: center;
+height: 700px;
+width: 320px;
+color: white;
+overflow: auto;
+margin-top: 50%;
+margin-left: -1%;
+max-height: 700px;
+max-width: 320px;
+    
+    
+    }
+
+
+}

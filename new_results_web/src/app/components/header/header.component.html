@@ -1,0 +1,42 @@
+
+<nav class="navbar navbar-expand-lg navbar-light header_background row no-margin">
+  <div class="col-lg-3 click-link row">
+    <div class="col-12 margin-imagem">
+      <img class="main-logo pointer navbar-brand" (click)="logoClicked()" [src]="logoSrc" style="max-height: 50px" alt="">
+  
+    </div>
+    <!-- <span class="label-partner-name ml-3 pl-1"> {{ partnerName }} </span> -->
+
+    <button class="navbar-toggler custom-toggler button-brand" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse col-lg-9 row background-nav-mobile " id="navbarSupportedContent">
+
+    <div class="no-gutters col-md-4 col-lg-2 mobile-dont-show text-left row">
+      <div class="col-6 div-menu text-center click-link div-active" >
+        <label class="div-menu-label click-link" routerLink="result-games" > Resultados </label>
+      </div>
+      <!-- <div class="col-6 div-menu text-center click-link" [class.div-active]="liveGames">
+        <label class="div-menu-label click-link"> Ao vivo </label>
+      </div> -->
+    </div>
+
+    <div class="header-forms col-12 col-md-6 col-lg-6 text-left">
+
+      <div class="row align-pc">
+       
+        <div class="form-cell-bet col-12 col-md-5">
+     
+        </div>
+      </div>
+   
+    </div>
+    
+      <div class="col-md-1 col-lg-1 position-pc-helper text-right div-helper">
+
+    </div>
+  
+  </div>
+</nav>

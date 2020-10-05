@@ -1,0 +1,33 @@
+.bet-iframe {
+  height: calc(100vh - 358px);
+  width: 100%;
+}
+
+.container-modal-check {
+  width: 100%;
+}
+
+.closed-button {
+  width: 100%;
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.custom-modalbox>mat-dialog-container {
+  width: 29rem !important;
+}
+
+.captcha {
+  display: inline-block;
+}
+
+
+@media screen and (max-width: 968px) {
+
+  .bet-iframe {
+    height: calc(100vh - 150px);
+    width: 100%;
+  }
+
+}

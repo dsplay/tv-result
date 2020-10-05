@@ -1,0 +1,16 @@
+
+.container-fluid {
+  padding:0px;
+}
+
+.main-layout-container {
+  background-color: black;
+}
+
+.row {
+  height: 100%;
+  background-color: black;
+}
+
+
+

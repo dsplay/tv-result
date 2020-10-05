@@ -1,0 +1,13 @@
+.loader {
+    position: relative;
+    top: 40%;
+}
+
+.loading{
+    background: linear-gradient(180.87deg, #1E1C1C 53.32%, #303630 134.61%);
+    height: 100vh;
+}
+
+img {
+    opacity: 0.7;
+  }

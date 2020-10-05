@@ -1,0 +1,392 @@
+.container-pre-make-bet {
+  height: calc(100vh - 4.4em);
+  background-color: #555854;
+  background: linear-gradient(201.77deg, #1E1C1C 53.32%, #303630 134.61%)
+}
+
+label {
+  color: white;
+}
+
+.title-bet {
+  width: 90%;
+  margin-left: 5%;
+  color: #FCFFFD;
+  border-bottom: 1px solid #3B3D3A;
+  padding-bottom: 18px;
+}
+
+.text-bet {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 16px;
+  margin-top: 3%;
+}
+
+.container-bets {
+  height: calc(108vh - 37em);
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.text-clear {
+  margin-top: 3%;
+  margin-right: 5%;
+  float: right;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 16px;
+  color: #0DE84A;
+}
+
+
+.container-make-pre-bet {
+  background-color: #313230;
+  height: 43.7vh;
+  position: fixed;
+  bottom: 0;
+  width: 25%;
+}
+
+.title-make {
+  margin-top: 3%;
+  color: #FFFFFF;
+  margin-left: 5%;
+}
+
+.make-pre-bet-value {
+  margin-left: 5%;
+  width: 90%;
+}
+
+.button-value {
+  width: 29%;
+  background: transparent;
+  color: #FFFFFF;
+  padding: 15px;
+  border-radius: 8px;
+  border: 0.5px solid;
+  margin-right: 3%;
+}
+
+.input-name  {
+  width: 100%;
+  background-color: #555854;
+  border-radius: 8px;
+  border: none;
+  height: 48px;
+  padding-left: 9px;
+  color: #FFFFFF;
+  margin-top: 1rem;
+}
+
+.input-value  {
+  width: 35%;
+  background-color: #555854;
+  border-radius: 8px;
+  border: none;
+  height: 48px;
+  padding-left: 9px;
+  color: #FFFFFF;
+}
+
+input[type="text"].input-value::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.result-bet {
+  margin-left: 5%;
+  width: 90%;
+}
+
+.big-values {
+  font-size: 1.3em;
+}
+
+.basic-color {
+  color: #FFFFFF;
+}
+
+.div-bet-button {
+  margin-top: 3%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.make-pre-bet-button {
+  border: none;
+  width: 100%;
+  background: #0BB63B;
+  color: #FFFFFF;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.barra-gol-style {
+  height: 70px;
+  margin-top: -10%
+}
+
+.gol-style {
+  height: 40px;
+  background-color: #FFFFFF;
+  border-radius: 40px;
+}
+
+.gol-label {
+  margin-top: -5%;
+}
+
+.text-not-found {
+  margin-top: 2%;
+  font-size: 1.3em;
+}
+
+.div-bet {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.remove-bet {
+  background: transparent;
+  border: none;
+  color: #B4B4B4;
+  font-size: 1.2em;
+  width: 100;
+  font-weight: bold;
+}
+
+.home-versus-away {
+  font-size: 1.2em;
+  width: 90%;
+  margin-bottom: 0px;
+}
+
+.date-bet {
+  font-size: 0.8em;
+  color: #8C8C8C;
+}
+
+.x-versus {
+  color: #8C8C8C;
+  font-size: 0.8em;
+}
+
+.rate-div {
+  background: #313230;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.rate-name {
+  width: 70%;
+  font-size: 1.1em;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.rate-value {
+  width: 25%;
+  padding: 10px;
+  background: #354538;
+  border-radius: 8px;
+  color: #0DE84A;
+  border: 0.5px solid;
+  margin-top: 1%;
+  text-align: center;
+}
+
+.pre-bet-mobile {
+  background-color: #3B3D3A;
+  position: fixed;
+  box-shadow: 4px -6px 14px rgba(0, 0, 0, 0.25);
+  bottom: -145px;
+  width: 100%;
+  z-index: 1123;
+  height: 50px;
+  transition-duration: 0.4s;
+  font-size: 1.0em;
+}
+
+.pre-bet-align {
+  display: flex;
+  width: 90%;
+  margin-top: 3%;
+}
+
+.opened {
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+
+
+.bet-number {
+  background: white;
+  margin-left: 7%;
+  border-radius: 8px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  padding: 4px 12px 4px 7px;
+}
+
+.bet-one {
+  border-right: 1px solid #299160;
+}
+
+.button-continue {
+  font-size: 28px;
+  background: #15d647;
+  color: white;
+  padding: 3px;
+  border-radius: 8px;
+  border: none;
+  margin-top: -20%;
+  margin-left: -25%;
+  width: 50px;
+}
+
+.align-this {
+  margin-top: -1%;
+}
+
+.step-two-bets {
+  z-index: 100000;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(200.33deg, #1E1C1C 53.32%, #303630 134.61%);
+}
+
+.back-to-menu {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 1.4em;
+}
+
+.div-bet-mobile {
+  height: calc(100vh - 27em);
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.margin-rates {
+  margin-top: 1.5em;
+}
+
+@media screen and (max-width: 975px) {
+  .rate-div {
+    background: rgba(11, 182, 59, 0.3);
+    color: #FCFFFD;
+    font-size: 1.0em;
+  }
+
+  .rate-name {
+    width: 70%;
+  }
+
+  .label-rates{
+    margin-left: 5%;
+  }
+
+  .label-pre-bet{
+    margin-left: 15%;
+  }
+
+  .rate-value {
+    background: #0BB63B;
+    color: #FFFFFF;
+    border: none;
+  }
+
+  .rate-div {
+    background-color: rgba(11, 182, 59, 0.3);
+  }
+
+  .container-make-pre-bet {
+    background-color: #3B3D3A;
+
+  }
+
+  .button-value {
+    color: #FCFFFD;
+    width: 25%;
+    border: 1px solid #FCFFFD;
+    padding: 10px;
+  }
+
+  .input-value {
+    width: 44%;
+    height: 40px;
+  }
+
+  .input-name {
+    width: 100%;
+    height: 40px;
+    margin-top: 1rem;
+
+  }
+
+  .margin-rates {
+    margin-top: 0.7em;
+  }
+
+  .big-values {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .make-pre-bet-button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .container-make-pre-bet {
+    height: auto;
+    width: 100%;
+
+  }
+
+  .title-make {
+    margin-top: 2%;
+    color: #FFFFFF;
+    margin-left: 5%;
+  }
+
+  .make-pre-bet-value {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .rate-mobile {
+    background: rgba(11, 182, 59, 0.3);
+    padding: 2px 10px 2px 10px;
+    border-radius: 8px;
+    color: #0BB63B;
+  }
+
+
+}
+
+@media screen and (max-width: 320px) {
+  .bet-number {
+    background: white;
+    margin-left: 7%;
+    border-radius: 8px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding: 3px 5px 4px 2px;
+}
+
+.label-rates{
+  margin-left: 0%;
+}
+
+}

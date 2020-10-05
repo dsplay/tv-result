@@ -1,0 +1,12 @@
+<section *ngIf="isLoading; else showApp" class="loading text-center">
+    <div class="loader">
+      <img src="../assets/img/bestgame-logo.svg" alt="BestGame"> 
+      <br />
+      <img src="../assets/img/preload.gif" alt="loading" class="pt-3">
+    </div>
+</section>
+
+<ng-template #showApp>
+    <router-outlet ></router-outlet>
+</ng-template>
+

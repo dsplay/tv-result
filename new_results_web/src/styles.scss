@@ -1,0 +1,422 @@
+/* You can add global styles to this file, and also import other style files
+*/
+
+@import url(~@angular/material/prebuilt-themes/deeppurple-amber.css);
+
+@import "~ngx-sharebuttons/themes/material/material-dark-theme";
+@import "~ngx-sharebuttons/themes/modern/modern-light-theme";
+
+body {
+  font-family: DM Sans;
+}
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: #0de84a;
+}
+
+.mat-ripple-element {
+  background: #0de84a;
+}
+
+.mat-tab-header-pagination-chevron {
+  border-color: #0de84a !important;
+}
+
+.click-link {
+  cursor: pointer;
+}
+
+.custom-modalbox > mat-dialog-container {
+  background: #3b3d3a;
+  border-radius: 8px;
+  color: #fcfffd;
+  max-width: 100%;
+  height: 70vh;
+}
+
+.custom-modal-check > mat-dialog-container {
+  background: #3b3d3a;
+  border-radius: 8px;
+  color: #fcfffd;
+  width: 29rem;
+  height: 70vh;
+}
+
+.custom-just-one-day > mat-dialog-container {
+  background: #3b3d3a;
+  border-radius: 8px;
+  color: #fcfffd;
+  max-width: 50%;
+  height: auto;
+  margin-left: 25%;
+}
+
+.best-password-panel > mat-dialog-container {
+  background-color:  #242A24 !important;
+  border-radius: 8px;
+  color: #fcfffd;
+  overflow: visible;
+  display: table;
+  width: 100%;
+  max-width: 368px;
+}
+
+
+
+.best-withdraw-account > mat-dialog-container {
+
+    background-color: #282E28 !important;
+    border-radius: 8px;
+    color: #fcfffd;
+    overflow: visible;
+    display: table;
+    width: 100%;
+    max-width: 368px;
+    padding: 5%;
+    margin-top: -33%
+ 
+}
+
+.best-add-account > mat-dialog-container {
+ 
+  background-color: #282E28 !important;
+  border-radius: 8px;
+  color: #fcfffd;
+  overflow: visible;
+  display: table;
+  width: 100%;
+  max-width: 368px;
+  padding: 5%;
+  margin-top: -6%
+
+}
+
+
+.mat-tab-label .mat-tab-label-content {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.mat-tab-label-active {
+  color: #0de84a !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar {
+  background-color: #0de84a;
+}
+
+.quantify-games {
+  color: #ffd643;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mat-expansion-panel-content > .mat-expansion-panel-body {
+  background-color: #151614;
+}
+
+.mat-expansion-indicator::after {
+  color: #fff;
+ 
+}
+
+
+.mat-accordion .mat-expansion-panel:first-of-type {
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.mat-accordion .mat-expansion-panel:last-of-type {
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: rgb(212, 204, 204);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b3d3a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken(#3b3d3a, 10%);
+  opacity: 1;
+}
+
+
+
+@media screen and (max-width: 975px) {
+  .mobile-dont-show {
+    display: none;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cdk-overlay-pane {
+    max-width: 96vw !important;
+    margin-left: 1% !important;
+  }
+
+  .custom-modalbox > mat-dialog-container {
+    background: #3b3d3a;
+    border-radius: 8px;
+    color: #fcfffd;
+    max-width: 100%;
+    height: 98vh;
+  }
+
+
+  .custom-modal-check > mat-dialog-container {
+    background: #3b3d3a;
+    border-radius: 8px;
+    color: #fcfffd;
+    max-width: 100%;
+    height: 98vh;
+
+
+  }
+
+  .custom-modalbox > mat-dialog-content {
+    max-height: 80vh;
+  }
+
+  .custom-just-one-day > mat-dialog-container {
+    max-width: 90%;
+    margin-left: 5%;
+  }
+
+  .best-withdraw-account > mat-dialog-container {
+
+    width: 95%;
+    padding: 10%;
+    margin-left: 2%;
+    margin-top: -46%;
+    padding-bottom: 0%;
+    
+   }
+
+   .best-add-account > mat-dialog-container {
+ 
+    margin-top: -10%;
+    padding: 0%;
+
+  }
+
+  .container-form-login {
+ 
+    width: 100%;
+  
+  }
+  
+
+}
+
+@media screen and (min-width: 968px) {
+  .desktop-dont-show {
+    display: none;
+  }
+
+  .best-add-account > mat-dialog-container {
+
+    width: 95%;
+ 
+  }
+  
+  
+
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.container-login {
+  width: 100%;
+  height: 100%;
+  display: table;
+  background-image: url("assets/img/login-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1%;
+}
+
+.container-form-login {
+  margin: auto;
+  background: #232422;
+  padding: 2%;
+  width: 100%;
+  max-width: 409px;
+  align-self: center;
+  margin-top: 8%;
+  border-radius: 12px;
+  position: relative;
+}
+
+.main {
+  background: #008726;
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin-bottom: -5%;
+}
+
+.black-green-button {
+  background: black;
+  /* Color/verdesecundario */
+
+  border: 1px ;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  height: 40px;
+  width: 100%;
+  max-width: 248px;
+  color: white;
+  /* Color/verdesecundario */
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+}
+
+.green-button {
+  background: #0bb63b;
+  border-radius: 8px;
+  height: 40px;
+  width: 100%;
+  max-width: 248px;
+  color: white;
+  font-family: DM Sans;
+  font-style: normal;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 2%;
+}
+
+.mone{
+
+position: absolute;
+margin-left: 18.9%;
+margin-top: 1.4%;
+
+}
+
+.balance {
+
+
+}
+
+.green-button:disabled {
+  background-color: gray;
+  color: gainsboro;
+  cursor: not-allowed;
+}
+
+.cancel {
+  /* Color/boxes card */
+  background: #3b3d3a;
+  border-radius: 8px;
+  color: white;
+}
+
+.waiting-payment {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  /* Color/alerta */
+
+  color: #fbeb62;
+}
+
+.waiting-result {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  color: #1ddbf5;
+}
+
+.lost-bet {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  /* Color/red */
+
+  color: #fa7171;
+}
+
+.bet-win {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  /* Color/verdesecundario */
+
+  color: #0de84a;
+}
+
+.bet-lost {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  /* Color/texto secundario */
+
+  color: #8c8c8c;
+}
+
+
+
+
+
+

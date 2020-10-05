@@ -1,0 +1,56 @@
+<form [formGroup]="withdrawForm" *ngIf="dontShowPassword; else screenPassword">
+  <label> <button type="button" class="button-exit" (click)="close()">X</button></label>
+  <label class="title-sacar"> Sacar dinheiro </label>
+  <label class="title-select"> Selecionar o valor e a conta desejada para receber o saque. </label>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <label for="value">Valor do saque</label>
+        <input class="form-control" formControlName="value" name="value" id="value" type="text" currencyMask
+          [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }" placeholder="Digite aqui">
+      </div>
+    </div>
+    <div class="row" *ngFor="let account of $accounts | async">
+      <div class="col-lg-2 col-md-2">
+        <input type="radio" [value]="account.id" name="external_account_id" formControlName="external_account_id">
+      </div>
+      <div class="col">
+        <label for="external_account_id">
+          {{ account.account_data.bank_name }} - Conta: {{ account.account_data.bank_name }} / Agencia:
+          {{ account.account_data.agency }}
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col center-text">
+        <button type="button" class="green-button cancel" (click)="close()">
+          Cancelar
+        </button>
+      </div>
+      <div class="col">
+        <button class="green-button" [disabled]="withdrawForm.invalid" (click)="openPasswordConfirm()">Continuar</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+<ng-template #screenPassword >
+  <div class="confirmation-password">
+
+    <label> <button type="button" class="button-exit-dialog" (click)="close()">X</button></label>
+    <h1 class="title-confirmation"> Confirmar senha </h1>
+    <label class="title-subTitle"> Para garantir sua segurança,insira sua senha mais uma vez </label>
+     
+    <form [formGroup]="confirmationForm">  
+    <label class="title-namePassword"> Senha </label>
+    <div class=" row input-confirmation-password">
+      <input class="form-control " formControlName="password" id="senha" type="password" placeholder="Digite aqui">
+    </div>
+    <div class="col button-sacar">
+      <button type="button" class="green-button" [disabled]="confirmationForm.invalid"  (click)="confirmWithdraw()">
+        Sacar
+      </button>
+    </div>
+    </form>
+  </div>
+</ng-template>

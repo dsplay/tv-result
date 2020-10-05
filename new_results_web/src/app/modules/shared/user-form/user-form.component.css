@@ -1,0 +1,164 @@
+label {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  color: #FFFFFF;
+  display: inline-table;
+  width: 100%;
+}
+
+input {
+  /* Color/card elements */
+  background: #555854;
+  /* Color/Header */
+  border: 1px solid #232422;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 17px;
+  width: 100%;
+  max-width: 344px;
+  height: 40px;
+  color: #B4B4B4;
+}
+
+a {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0DE84A;
+}
+
+p {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* White */
+  color: #FCFFFD;
+}
+
+.body-text {
+  color: #FFFFFF;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10%;
+  display: inline-table;
+  margin-left: 16%;
+
+}
+
+.center-text {
+  text-align: center;
+}
+
+::placeholder {
+  font-style: italic;
+  color: #B4B4B4;
+}
+
+.row {
+  margin-bottom: 3%;
+}
+
+.ul-info {
+  padding-left: 5%;
+  color: white;
+}
+
+.ul-info li {
+  margin-bottom: 1%;
+  list-style-type: disc;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* White */
+  color: #FCFFFD;
+}
+
+.error {
+  color: firebrick;
+  font-size: 12px;
+}
+
+.change-password {
+  /* Text/label (13) */
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height, or 135% */
+  display: flex;
+  flex-direction: column;
+  /* Color/textos principais */
+  color: #FFFFFF;
+}
+
+.profile {
+  /* Text/label (13) */
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height, or 135% */
+  display: flex;
+  flex-direction: column;
+  max-width: 264px;
+  /* Color/textos principais */
+  color: #FFFFFF;
+}
+
+.profile .row {
+  padding-bottom: 4%;
+}
+
+.profile input[type='date'] {
+  max-width: 160px;
+}
+
+.profile input {
+  color: #FFFFFF;
+  background: #3B3D3A;
+}
+
+.profile-submit-button {
+  max-width: 100%;
+}
+
+h3 {
+  /* Título principal */
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  /* White */
+  color: #FCFFFD;
+}
+
+
+
+
+@media screen and (max-width: 975px) { 
+
+  .body-text {
+  
+    margin-left: 18%;
+
+}
+
+
+}

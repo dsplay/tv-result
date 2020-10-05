@@ -1,0 +1,28 @@
+<div class="custom-modalbox">
+    <label class="closed-button click-link" (click)="closed()">X</label>
+    
+    <h1 mat-dialog-title>Perguntas frequentes</h1>
+    
+    <div mat-dialog-content>
+        <mat-tab-group>
+            <mat-tab label="Descrição das taxas"> 
+                <div class="help-rates">
+                    <app-table-helper-rates></app-table-helper-rates>
+                </div>
+            </mat-tab>
+            <mat-tab label="Regras da praça"> 
+                
+                <div class="content">
+                    <ul class="list-group list-group-flush text">
+                        <li class="list-group-item ng-star-inserted" *ngFor="let text of partnerText">
+                            {{ text}}
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </mat-tab>
+          </mat-tab-group>
+    </div>
+</div>

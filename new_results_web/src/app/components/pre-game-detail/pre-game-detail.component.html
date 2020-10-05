@@ -1,0 +1,188 @@
+<div class="container-details">
+
+    <div *ngIf="loadingGameRate; else showRates">
+        <div class="div-flex">
+            <div class="mt-5">
+                <mat-spinner></mat-spinner>
+            </div>
+        </div>
+    </div>
+
+    <ng-template #showRates>
+
+        <div class="title-detail row">
+            <div class="bg-image col-12">
+
+            </div>
+            <div class="col-12 position-this">
+                <label class="tournament-name">
+                    {{ tournamentName }}
+                </label>
+                <label class="back-to-list click-link" (click)="backToHome()">
+                    <svg class="back-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M178.5,140.25v-102L0,216.75l178.5,178.5V290.7c127.5,0,216.75,40.8,280.5,130.05C433.5,293.25,357,165.75,178.5,140.25z"
+                            fill="#ffffff" />
+
+                    </svg>&nbsp;&nbsp;
+                </label>
+                <label class="game-name">
+                    {{ game.homeTeam }} x {{ game.awayTeam}}
+                </label>
+                <label class="game-time">
+                    {{ visibleDateGame }}
+                </label>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+        <div class="container-rates">
+
+            <div *ngFor="let rateGroup of game.rateGroup" class="margin-rates">
+                <mat-accordion *ngIf="rateGroup.rates.length > 0">
+                    <mat-expansion-panel expanded="true">
+                        <mat-expansion-panel-header class="disable_ripple">
+                            <mat-panel-title>
+                                <label class="title-group">
+                                    {{ rateGroup.name }}
+                                </label>
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="row align-mobile">
+                            <div class="col-12 col-md-3 div-rate mt-3 click-link"
+                                *ngFor="let rateGame of rateGroup.rates" (click)="addBet(game, rateGame)"
+                                [class.actived-rate]="verifHasInCurrentBet(game, rateGame)">
+                                <label class="text-left label-text-name  click-link">
+                                    {{ rateGame.name }}
+                                </label>
+                                <label class="text-right label-text  click-link">
+                                    {{ getValueRate(rateGame.value) }}
+                                </label>
+                            </div>
+                        </div>
+
+
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </div>
+            <mat-accordion *ngIf="homeInterval.length > 0">
+                <mat-expansion-panel expanded="true">
+                    <mat-expansion-panel-header class="disable_ripple">
+                        <mat-panel-title>
+                            <label class="title-group">
+                                Intervalo - Resultado Correto
+                            </label>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <div class="row align-mobiel">
+                        <div class="col-12 col-md-4">
+                            <div class="col-12 div-rate mt-3 click-link" *ngFor="let rateGame of homeInterval"
+                                (click)="addBet(game, rateGame)"
+                                [class.actived-rate]="verifHasInCurrentBet(game, rateGame)">
+                                <label class="text-left label-text-name  click-link">
+                                    {{ rateGame.name }}
+                                </label>
+                                <label class="text-right label-text  click-link">
+                                    {{ getValueRate(rateGame.value) }}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="col-12 div-rate mt-3 click-link" *ngFor="let rateGame of drawInterval"
+                                (click)="addBet(game, rateGame)"
+                                [class.actived-rate]="verifHasInCurrentBet(game, rateGame)">
+                                <label class="text-left label-text-name  click-link">
+                                    {{ rateGame.name }}
+                                </label>
+                                <label class="text-right label-text  click-link">
+                                    {{ getValueRate(rateGame.value) }}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="col-12 div-rate mt-3 click-link" *ngFor="let rateGame of awayInterval"
+                                (click)="addBet(game, rateGame)"
+                                [class.actived-rate]="verifHasInCurrentBet(game, rateGame)">
+                                <label class="text-left label-text-name  click-link">
+                                    {{ rateGame.name }}
+                                </label>
+                                <label class="text-right label-text  click-link">
+                                    {{ getValueRate(rateGame.value) }}
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </mat-expansion-panel>
+            </mat-accordion>
+            <mat-accordion *ngIf="home.length > 0">
+                <mat-expansion-panel expanded="true">
+                    <mat-expansion-panel-header class="disable_ripple">
+                        <mat-panel-title>
+                            <label class="title-group">
+                                Resultado Correto
+                            </label>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <div class="row align-mobiel">
+                        <div class="col-12 col-md-4">
+                            <div class="col-12 div-rate mt-3 click-link" *ngFor="let rateGame of home"
+                                (click)="addBet(game, rateGame)"
+                                [class.actived-rate]="verifHasInCurrentBet(game, rateGame)">
+                                <label class="text-left label-text-name  click-link">
+                                    {{ rateGame.name }}
+                                </label>
+                                <label class="text-right label-text  click-link">
+                                    {{ getValueRate(rateGame.value) }}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="col-12 div-rate mt-3 click-link" *ngFor="let rateGame of draw"
+                                (click)="addBet(game, rateGame)"
+                                [class.actived-rate]="verifHasInCurrentBet(game, rateGame)">
+                                <label class="text-left label-text-name  click-link">
+                                    {{ rateGame.name }}
+                                </label>
+                                <label class="text-right label-text  click-link">
+                                    {{ getValueRate(rateGame.value) }}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="col-12 div-rate mt-3 click-link" *ngFor="let rateGame of away"
+                                (click)="addBet(game, rateGame)"
+                                [class.actived-rate]="verifHasInCurrentBet(game, rateGame)">
+                                <label class="text-left label-text-name  click-link">
+                                    {{ rateGame.name }}
+                                </label>
+                                <label class="text-right label-text  click-link">
+                                    {{ getValueRate(rateGame.value) }}
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </mat-expansion-panel>
+            </mat-accordion>
+
+
+
+        </div>
+    </ng-template>
+
+
+
+</div>

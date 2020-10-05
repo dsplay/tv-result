@@ -1,0 +1,64 @@
+<form [formGroup]="accountForm">
+  <div class="container">
+    <label> <button type="button" class="button-exit" (click)="close()">X</button></label>
+    <label class="title-add"> Adicionar nova conta </label>
+    <div class="row">
+      <div class="col">
+        <label for="bank_name">Banco</label>
+        <input class="form-control" formControlName="bank_name" name="bank_name" id="bank_name" type="text"
+          placeholder="Digite aqui">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="radio-input">
+         <input [value]="operation.contaCorrente" formControlName="account_type" name="account_type" id="account_type_cc" type="radio" checked>
+         <label for="account_type_cc" class="label-radio">Conta corrente</label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="radio-input">
+          <input [value]="operation.poupanca" formControlName="account_type" name="account_type"id="account_type_poupanca" type="radio" >
+          <label for="account_type_poupanca" class="label-radio">Conta poupança</label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="agency">Agencia</label>
+        <input class="form-control" formControlName="agency" name="agency" id="agency" type="text"
+          placeholder="Digite aqui">
+      </div>
+      <div class="col">
+        <label for="account_number">Conta</label>
+        <input class="form-control" formControlName="account_number" name="account_number" id="account_number"
+          type="text" placeholder="Digite aqui">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="full_name">Nome completo</label>
+        <input class="form-control" formControlName="full_name" name="full_name" id="full_name" type="text"
+          placeholder="Digite aqui">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="cpf">CPF</label>
+        <input class="form-control" formControlName="cpf" name="cpf" id="cpf" type="text" placeholder="Digite aqui">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col center-text">
+        <button type="button" class="green-button cancel" (click)="close()">
+          Cancelar
+        </button>
+      </div>
+      <div class="col center-text">
+        <button type="button" class="green-button" [disabled]="accountForm.invalid" (click)="saveAccount()">
+          Adicionar conta
+        </button>
+      </div>
+    </div>
+  </div>
+</form>

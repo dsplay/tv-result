@@ -1,0 +1,73 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 div-games-odd">
+
+            <div class="carousel slide" id="carousel-600168">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item"  [class.active]="activeCarousel === i"
+                        *ngFor="let tournamentTwoGames of tournamentJustOneGameNew; let i = index">
+
+                        <div class="row">
+
+                            <div class="col-md-6 " *ngFor="let tournament of tournamentTwoGames">
+
+                                <h5 class="text-light-tournament"> {{ tournament.name }} </h5>
+
+                                <h5 class="text-light-vs"> {{ tournament.game.homeTeam }} X
+                                    {{ tournament.game.awayTeam }} </h5>
+
+                                <h5 class="visibleDate"> {{ tournament.game.visibleDate }} </h5>
+                                <table class="">
+                                    <tbody>
+                                        <tr>
+                                            <td class="rate">
+
+                                                <span class="title-casa"> Casa </span>
+                                                <span class="title"> Empate </span>
+                                                <span class="title"> Fora </span> <br>
+
+                                                <span
+                                                    *ngIf="verifyHasThisRate(1, tournament.game.rates); else buttonWithoutValueOne; let rateGame"
+                                                    class="placar-style-casa">
+                                                    {{ getRateDecimal( rateGame.value ) }} </span>
+                                                <ng-template #buttonWithoutValueOne>
+                                                    <span class="placar-style-casa">  - </span>
+                                                </ng-template>
+                                                <span
+                                                    *ngIf="verifyHasThisRate(2, tournament.game.rates); else buttonWithoutValueOne; let rateGame"
+                                                    class="placar-style">
+                                                    {{ getRateDecimal( rateGame.value ) }} </span>
+                                                <ng-template #buttonWithoutValueTwo>
+                                                    <span class="placar-style">  - </span>
+                                                </ng-template>
+                                                <span
+                                                    *ngIf="verifyHasThisRate(3, tournament.game.rates); else buttonWithoutValueOne; let rateGame"
+                                                    class="placar-style">
+                                                    {{ getRateDecimal( rateGame.value ) }} </span>
+                                                <ng-template #buttonWithoutValueThree>
+                                                    <span class="placar-style">  - </span>
+                                                </ng-template>
+
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="div-linha"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <a id="previous" class="carousel-control-prev" href="#carousel-600168" data-slide="prev"><span
+                            class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a>
+                    <a #start id="next" class="carousel-control-next" href="#carousel-600168" data-slide="next">
+                       <span class="sr-only">Next</span></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

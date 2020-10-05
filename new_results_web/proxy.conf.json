@@ -1,0 +1,46 @@
+{
+  "/v1": {
+    "target": "https://bestgame-bet-online.herokuapp.com",
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "secure": false
+  },
+    "/result": {
+      "target": "http://62186cf1-stage-stageingres-a014-1826811871.us-west-2.elb.amazonaws.com",
+      "secure": false,
+      "headers": {
+        "referer": "http://miami.bestgame.us/"
+      },
+      "logLevel": "debug",
+      "changeOrigin": true
+      }
+    ,
+
+  "/gateway": {
+    "target": "http://miami.bestgame.us",
+    "secure": false,
+    "headers": {
+      "referer": "http://miami.bestgame.us/"
+    },
+    "logLevel": "debug",
+    "changeOrigin": true
+    },
+    "/local": {
+      "target": "https://localhost:3333",
+      "logLevel": "debug",
+      "changeOrigin": true,
+      "secure": false
+    }
+
+    ,"/api": {
+
+      "target": "http://62186cf1-production-produc-89d2-1475054382.us-west-2.elb.amazonaws.com",
+      "logLevel": "debug",
+      "changeOrigin": true,
+      "secure": false,
+      "headers": {
+        "referer": "http://miami.bestgame.us/"
+      }
+
+    }
+}

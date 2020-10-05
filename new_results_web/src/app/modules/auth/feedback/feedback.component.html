@@ -1,0 +1,41 @@
+<div class="main">
+  <div class="container-login">
+    <div class="container-form-login">
+      <ng-container #feedBackResetPassword *ngIf="isPasswordReseted">
+        <h3>Tudo certo!</h3>
+        <div class="img">
+          <img src="../../../../assets/img/feedback-image.png">
+        </div>
+        <p>
+          Senha redefinida com sucesso!
+        </p>
+        <p>
+          Realize seu login :)
+        </p>
+        <br>
+        <div class="footer-feedback">
+          <button type="button" class="green-button" [routerLink]="['/auth/login']">
+            Fazer login
+          </button>
+        </div>
+      </ng-container>
+
+      <ng-container #feedBackRequestResetPassword *ngIf="isResetPassword">
+        <h3>Quase lá!</h3>
+        <div class="img">
+          <img src="../../../../assets/img/feedback-image-request.png">
+        </div>
+        <p>
+          Confira seu email, enviamos o link de redefinição de senha.
+        </p>
+        <br>
+        <div class="footer-feedback">
+          <button type="button" class="green-button" [routerLink]="['/auth/login']">
+            Ok
+          </button>
+        </div>
+      </ng-container>
+    </div>
+
+  </div>
+</div>

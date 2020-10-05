@@ -1,0 +1,450 @@
+h3 {
+  /* Título principal */
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  /* White */
+  color: #FCFFFD;
+}
+
+.container-fluid {
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 6.25em);
+  overflow: hidden;
+  overflow-y: auto;
+  width: 100%;
+  background: linear-gradient(165.53deg, #1E1C1C 1.62%, #303630 98.7%);
+}
+
+.div-title-wallet-button {
+
+  display: flex;
+  justify-content: space-between
+
+}
+
+.div-list-account {
+
+  display: flex;
+  margin-top: 15%;
+  flex-direction: inherit;
+  max-width: 1153;
+
+}
+
+.wallet-block .col {
+  border: 2px solid black;
+  height: 40px;
+  display: table;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+}
+
+.wallet-block {
+  width: 100%;
+  max-width: 244px;
+  background: #232422;
+  border-radius: 8px;
+  display: inline-block;
+ 
+}
+
+.col-balance-block {
+
+  display: inline-block;
+  height: 40px;
+}
+
+.balance-value {
+
+  transform: translateY(-50%);
+  margin-top: 20%;
+  position: absolute;
+
+}
+
+.cifra {
+
+  margin-top: 3%;
+  color: white;
+  font-size: 17px;
+  position: absolute;
+  margin-left: 0%;
+}
+
+
+.balance-block {
+  /* Cards mais opcoes (12) */
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  /* White */
+  color: #FCFFFD;
+  position: absolute;
+  margin-left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 7%;
+}
+
+.balance {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  color: #FCFFFD;
+
+}
+
+.buttons-group {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+ 
+}
+
+.green-button-deposit {
+
+  background: #0bb63b;
+  border-radius: 8px;
+  height: 40px;
+  width: 100%;
+  max-width: 248px;
+  color: white;
+  font-family: DM Sans;
+  font-style: normal;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+
+
+.green-button-sacar {
+
+  background: #0bb63b;
+  border-radius: 8px;
+  height: 40px;
+  width: 50%;
+  max-width: 248px;
+  color: white;
+  font-family: DM Sans;
+  font-style: normal;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 10%;
+  padding-left: 20%;
+  padding-right: 35%;
+
+}
+
+.my-accounts {
+  padding-top: 3%;
+}
+
+.add-account {
+  width: 70%;
+  height: 57%;
+  /* Color/BG */
+  background: black;
+  /* Color/verdesecundario */
+  border: 1px ;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.label-add-account {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FCFFFD;
+  align-self: center;
+  margin-left: 25%;
+  margin-top: 30%;
+
+}
+.add-img {
+
+  margin:auto;
+  position: absolute;
+  background-color: green;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 3.5%;
+  margin-top: -5%;
+}
+
+
+
+.bank-account {
+  /* Color/cinza intermediário */
+  background: #313230;
+  width: 176px;
+  height: 219px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+ 
+
+}
+
+.bank-name {
+  margin: auto;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  /* White */
+  color: #FCFFFD;
+  display: flex;
+}
+
+.bank-data {
+  margin-left: 10%;
+  /* Text/label (13) */
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17px;
+  color: #FCFFFD;
+  margin-bottom: 10%;
+}
+
+.bank-data li {
+  margin-bottom: 5%;
+}
+
+.section-delete-account {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height, or 135% */
+  display: flex;
+  align-items: center;
+  /* Color/textos principais */
+  color: #FFFFFF;
+}
+
+.bank-data-footer {
+  border-top: 2px solid black;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.my-accounts .col {
+  flex-grow: inherit;
+}
+
+.balance-img {
+
+
+
+}
+
+
+.tittle-meAccount {
+
+  color: #fff;
+  font-size: 20px;
+  margin-left: 7%;
+
+
+}
+
+.title-saldo {
+
+
+font-size: 22px;
+color: #fff;
+
+}
+
+.col-md-4 {
+
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+  
+  .col-md-4 {
+
+
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+
+.buttons-group {
+
+  margin-top: 5%;
+  
+}
+
+
+  .container-fluid {
+
+    flex-flow: column;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .div-list-account {
+
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  .green-button-deposit {
+
+    background: #0bb63b;
+    border-radius: 8px;
+    height: 40px;
+    width: 50%;
+    max-width: 248px;
+    color: white;
+    font-family: DM Sans;
+    font-style: normal;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 0%;
+    padding-right: 0%;
+
+  
+  }
+  
+  
+  .green-button-sacar {
+  
+    background: #0bb63b;
+    border-radius: 8px;
+    height: 40px;
+    width: 50%;
+    max-width: 248px;
+    color: white;
+    font-family: DM Sans;
+    font-style: normal;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 2%;
+    padding-left: 0%;
+    padding-right: 0%;
+  
+  }
+  
+.balance-img {
+
+  margin-left: 0%;
+
+}
+
+
+.green-button {
+
+ 
+  margin:auto;
+
+}
+
+.black-green-button {
+
+
+margin:auto;
+ 
+
+}
+
+.add-img {
+
+  margin-left: 5%;
+  margin-top: 0%;
+
+}
+
+
+.label-add-account {
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+ 
+}
+
+.my-accounts {
+
+  display: flex;
+  display: inline;
+
+}
+
+.bank-account {
+  /* Color/cinza intermediário */
+  background: #313230;
+  width: 224px;
+  height: 219px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: 1%;
+
+
+}
+.balance-value {
+
+margin-top: -1%;
+
+}
+
+.ng-star-inserted {
+
+  display: contents;
+
+}
+
+
+}

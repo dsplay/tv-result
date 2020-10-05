@@ -1,0 +1,179 @@
+label {
+  margin-bottom: 0.1rem;
+}
+
+.container-details {
+  height: calc(100vh - 4.4em);
+  width: 100%;
+  background: #151614;
+}
+
+
+.bg-image {
+  background-image: url("../../../assets/img/background-details.png");
+  height: 12vh;
+  width: 100%;
+  z-index: 0;
+  opacity: 0.4;
+
+}
+
+.position-this {
+  top: 0;
+  position: absolute;
+}
+
+
+.back-to-list {
+  width: 7%;
+  color: #FFFFFF;
+  font-size: 1.1em;
+  margin-left: 3%;
+}
+
+.tournament-name {
+  width: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.game-name {
+  color: #fFFFFf;
+  font-size: 1.4em;
+  text-align: center;
+  width: 80%;
+}
+
+.back-button {
+  font-size: 1.2em;
+  width: 1.5em;
+  float: left;
+  z-index: 2;
+}
+
+.game-time {
+  width: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1em;
+}
+
+.container-rates {
+  background-color: #151614;
+  overflow: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 13.5em);
+  margin-top: 2%;
+}
+
+.row {
+  margin-left: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mat-expansion-panel-content {
+  background-color: #151614;
+}
+
+.mat-expansion-panel-body{
+  background-color: #151614 ;
+}
+
+.mat-expansion-panel-header {
+  background-color: #313230;
+}
+
+.disable_ripple{
+  background: #313230 !important;
+}
+
+.disable_ripple:hover{
+  background: #313230 !important;
+}
+
+.div-flex{
+   display: flex;
+  justify-content: center;
+ }
+ 
+.title-group {
+  color: #FCFFFD;
+  font-size: 1.6em;
+  margin-left: 2%;
+}
+
+.div-rate {
+  padding: 12px;
+  background: #313230;
+  border-radius: 8px;
+  color: #FFFFFF;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.label-text {
+  width: 30%;
+  font-size: 1.1em;
+}
+
+.label-text-name {
+  width: 70%;
+}
+
+.actived-rate {
+  color: #0DE84A;
+  border: solid 1px #0DE84A;
+  background: #354538;
+}
+
+.margin-rates {
+  text-align: center
+}
+
+
+@media screen and (max-width: 975px) {
+  .tournament-name {
+    font-size: 1em;
+  }
+
+  .back-to-list {
+    width: 12%;
+  }
+
+  .game-name {
+    font-size: 1.0em;
+  }
+
+  .game-time {
+    font-size: 0.8em;
+  }
+
+  .row {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .align-mobile {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .container-rates {
+    height: calc(100vh - 19em);
+  }
+
+  .bg-image {
+    height: 14vh;
+  }
+
+  .div-rate {
+    padding: 12px;
+    background: #313230;
+    border-radius: 8px;
+    color: #FFFFFF;
+    margin-left: 1%;
+  }
+
+}

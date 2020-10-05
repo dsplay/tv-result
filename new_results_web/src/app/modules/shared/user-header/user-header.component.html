@@ -1,0 +1,16 @@
+<div *ngIf="!isAuth" class="div-button-login">
+  <button class="button-login" routerLink="/auth/login"> Entrar</button>
+</div>
+
+<div class="user-header" *ngIf="isAuth">
+  <div class="user-block">
+    <img src="../../../../assets/img/bestgame-logo.svg" class="user-header-img">
+    <button mat-button [matMenuTriggerFor]="menu">
+      <img src="../../../../assets/img/arrow.png" class="user-header-arrow">
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item class="button-meAccount" routerLink="/account/profile">Minha conta</button>
+      <button mat-menu-item class="button-logout text-center " (click)="logout()">Sair</button>
+    </mat-menu>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<label *ngIf="title" [innerHTML]="title" class="title"></label>
+
+<table class="games-table table-separate">
+  <thead class="title-table">
+    <tr>
+      <th *ngFor="let column of columns">
+        <span class="span-title" [innerHTML]="column.label"></span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="game" *ngFor="let item of data">
+      <td *ngFor="let column of columns; let i = index" [attr.id]="'td-'+i" [innerHTML]="item[column.name]">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+

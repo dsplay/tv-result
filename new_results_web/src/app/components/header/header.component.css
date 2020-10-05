@@ -1,0 +1,324 @@
+.header_background {
+    background: linear-gradient(180.87deg, #1E1C1C 53.32%, #303630 134.61%);
+}
+
+
+input {
+  color: white !important;
+}
+
+nav{
+    height: 100px;
+    width: inherit;
+    z-index: 99;
+}
+
+.navbar-collapse {
+
+  margin-right: 0%;
+  
+}
+.position-pc-helper{
+  position: absolute;
+  right: 0;
+}
+
+.no-margin{
+  margin-right: 0px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0%;
+
+}
+
+.header-forms {
+
+  display: flex;
+
+}
+
+.align-pc {
+  display: flex;
+  justify-content: center;
+}
+
+.div-menu{
+  color: #B4B4B4;
+  border: none;
+}
+
+.btn-search{
+  background: #0BB63B;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.div-menu-label {
+  margin-top: 15%;
+}
+
+.div-active{
+ font-weight: 500;
+ font-style: normal;
+ color: #0DE84A ;
+ height: 7.4vh;
+ border-bottom: 3px solid #0BB63B;
+}
+
+::placeholder{
+    color: #FCFFFD;
+}
+
+.custom-toggler.navbar-toggler { 
+  border-color: #0BB63B;
+} 
+
+.custom-toggler .navbar-toggler-icon { 
+  background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+
+.form-campeonato {
+    width: 140px;
+    background-color: #555854;
+    border-radius: 8px;
+    border:none;
+    height: 41px;
+    padding: 0 14% 0 14%;
+
+  
+}
+
+.form-bet-check {
+    width: 183px;
+    background-color: #555854;
+    border-radius: 8px;
+    border:none;
+    height: 41px;
+}
+
+.form-cell-bet {
+  margin-left: 1%;
+  display: flex;
+}
+
+.search-button {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+    color: #fff;
+    fill: currentColor;
+  }
+
+  .button-circle {
+
+    background: #555854;
+    color: #fff;
+    border-radius: 8px;
+    color: #0BB63B;
+
+  }
+
+  .coin {
+    border: 1.5px solid white;
+    border-radius: 25px;
+    color: #fdfdfd;
+  }
+
+  .cash-has{
+    color: #fdfdfd;
+    font-weight: bold;
+  }
+
+  .img-max {
+      width: 40px;
+      height: 40px;
+      border-radius: 25px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .btn-find-tournament-mobile{
+    display: none;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .btn-find-check-mobile {
+    display: none;
+  }
+
+
+  .label-partner-name{
+    color: #d8d8d8;
+    margin-top: -1%;
+    font-size: .9em;
+  }
+  
+  @media screen and (max-width: 975px) {
+ 
+
+    .main-logo{
+
+      max-height: 30px!important;
+
+    }
+
+    .margin-imagem{
+      margin-top: 2%;
+    }
+
+
+    .mobile-dont-show {
+
+     padding: 20%;
+
+    }
+
+    .margin-imagem{
+      margin-top: 0%;
+    }
+
+    .position-pc-helper{
+      position: relative;
+    }
+
+    .align-pc{
+      margin-left: 0%;
+      display: block;
+    }
+   
+    .btn-find-tournament-mobile{
+      display: block;
+      width: 48px;
+      height: 48px;
+      background-color: #0BB63B;
+      border-radius: 8px;
+      margin-top: 30px;
+      margin-left: 5px;
+      font-weight: bolder;
+      margin-right: -3%;
+      margin-left: 3%;
+    }
+
+    .form-cell-bet {
+      margin-left: 0%;
+    }
+
+    .btn-find-check-mobile{
+      display: block;
+      background: #242A24;
+      color: #0BB63B;
+      width: 137px;
+      height: 52px;
+      border-radius: 5px;
+ 
+  
+    }
+
+    .text-helper {
+      display: none;
+    }
+
+    .form-cell-tournament{
+      display: flex;
+    }
+
+    .form-cell-bet{
+      display: flex;
+      margin-top: 4%;
+    }
+
+    .form-campeonato:nth-child(1){
+     
+    margin-top: 30px;
+    height: 50px;
+    width: 205px;
+    margin-left: 0;
+    padding: 0 0 0 4;
+
+    }
+
+
+    .form-bet-check{
+      height: 50px;
+      width: 200px;
+      margin-left: 0%;
+
+    }
+
+    .background-nav-mobile{
+      background: #333333
+    }
+
+    .div-helper {
+      margin-top: 4%;
+      padding-bottom: 4%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button-circle{
+
+      background-color: #242A24;
+      color: #0BB63B;
+      font-weight: bold;
+      margin-top: 1%;
+      margin-left: 8%;
+
+    }
+
+    .button-brand{
+      right: 0;
+      position: absolute;
+    }
+
+    .check-button {
+
+      
+      margin-left: 2%;
+
+    }
+    .custom-toggler.navbar-toggler { 
+
+      margin-right: 8%;
+
+    } 
+
+    .wallet-mobile {
+    
+      display: none;
+    
+    }
+
+    .wallet-desktop {
+
+      display: block;
+
+    }
+
+
+ 
+  }
+
+  
+
+
+  

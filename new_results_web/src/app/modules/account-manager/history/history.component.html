@@ -1,0 +1,143 @@
+<div class="container-history" *ngIf="showHistoryBet; else filter">
+
+  <span class="title-historic"> Historico de apostas <button class="mat-button" mat-button (click)="openAndCloseFilter()"> Abrir
+      filtro</button></span>
+
+  <div class="div-color-status">
+    <label class="ganha">Ganha</label>
+    <label class="perdida">Perdida</label>
+    <label class="aguardando">Aguardando</label>
+    <label class="cancelada">Cancelada</label>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-4 div-filter-data">
+
+      <span class="title-filter"> Data </span>
+      <mat-form-field>
+        <mat-date-range-input [formGroup]="range" [rangePicker]="picker">
+          <input matStartDate formControlName="start" placeholder="">
+          <input matEndDate formControlName="end" placeholder="">
+        </mat-date-range-input>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      </mat-form-field>
+
+    </div>
+
+    <div class="col-md-4 div-filter-status">
+
+      <span class="title-filter-status"> Status </span>
+      <select [formControl]="controlStatus" class="select-status-filter-mobile" name="status" id="status">
+        <option value="" selected>Todos</option>
+        <option value="{{season.value}}" *ngFor="let season of seasons" >
+          {{ season.name }}
+        </option>
+      </select>
+
+    </div>
+
+    <div class="col-md-4 div-button-filter-date-status-desktop">
+      <button class="green-button-filter-date-status"  (click)="filterDataStatus()"> Filtrar </button>
+    </div>
+
+  </div>
+
+  <div *ngIf="divFilter" class="div-value-filters"> 
+  <span> 
+  
+  {{ start }} &nbsp;&nbsp;  á  &nbsp;&nbsp;  {{ end }}  &nbsp;&nbsp;&nbsp;&nbsp; 
+
+  {{ season }}
+
+  </span> 
+  
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-12 div-description-games">
+      <div class="title-historic-bet">
+        <label class="title-data"> Data de Pagamento </label>
+        <label class="title-value"> Valor </label>
+        <label class="title-award"> Prêmio </label>
+      </div>
+
+      <div [ngClass]="{'div-history-scroll-history-selected':listBets > 0}" class="div-history-scroll">
+        <mat-accordion *ngFor="let bet of betsUser; index as i">
+          <mat-expansion-panel [expanded]="step === i" (opened)="setStep(i)" (afterExpand)="findBetDetails(bet.id)"
+            (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <label [class]="'status-' + bet.status + ' aling-item'"> </label>
+                {{ bet.data }}
+              </mat-panel-title>
+              <mat-panel-title>
+                {{ bet.value }}
+              </mat-panel-title>
+              <mat-panel-title>
+                {{ bet.award }}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-spinner [diameter]="40" *ngIf="showSpinner"></mat-spinner>
+            <div class="details-games" *ngIf="betData">
+              <ul>
+                <li class="details" *ngFor="let betItem of betData.betItems">
+                  <span> Status: </span> {{ betItem.status }}&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span> Data do jogo: </span> {{ betItem.dateTime | date }}&nbsp;&nbsp;&nbsp;&nbsp;
+                  {{ betItem.homeTeam }} &nbsp; {{ betItem.finalResult.home }} vs
+                  {{ betItem.finalResult.away }} &nbsp; {{ betItem.awayTeam }}&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span> Valor da taxa: </span> {{ betItem.rateValue }}&nbsp;&nbsp;&nbsp;&nbsp;
+                  {{ betItem.rateName }}&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+              </ul>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<ng-template #filter>
+
+  <div class="row filters">
+    <div class="div-back-button"><button class="back-button" (click)="openAndCloseFilter()">
+        <svg class="back-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M178.5,140.25v-102L0,216.75l178.5,178.5V290.7c127.5,0,216.75,40.8,280.5,130.05C433.5,293.25,357,165.75,178.5,140.25z"
+            fill="#ffffff" />
+        </svg>
+      </button></div>
+
+    <div class="col-md-6 div-filter-data-mobile">
+      
+      <span class="title-filter"> Data </span>
+      <mat-form-field>
+        <mat-date-range-input [rangePicker]="picker">
+          <input matStartDate placeholder="">
+          <input matEndDate placeholder="">
+        </mat-date-range-input>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      </mat-form-field>
+
+    </div>
+
+    <div class="col-md-6 div-filter-status-mobile">
+
+      <span class="title-filter-status"> Status </span>
+      <select [formControl]="controlStatus" class="select-status-filter-mobile" name="status" id="status">
+        <option value="" selected>Todos</option>
+        <option value="{{season.value}}" *ngFor="let season of seasons" >
+          {{ season.name }}
+        </option>
+      </select>
+
+    </div>
+    <button class="green-button-filter-date-status-mobile" (click)="filterDataStatus()"> Filtrar </button>
+  </div>
+
+</ng-template>

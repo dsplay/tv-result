@@ -1,0 +1,22 @@
+<div class="container-profile">
+  <h3 class="title-desktop"> Dados Pessoais </h3>
+  <div class="row">
+    <h3 class="title-mobile"> Dados Pessoais </h3>
+    <div class="col-md-6 div-profile-dialog">
+      <img  src="../../../../assets/img/bestgame-logo.svg">
+      <label [innerHTML]="user.first_name"></label><br>
+      <p class="email" [innerHTML]="user.email"></p>
+      <img class="key-img" src="../../../../assets/img/key.png">
+      <a class="title-changePassword" href="javascript:void(0)" (click)="changePassword()">Alterar senha de acesso</a>
+    </div>
+
+    <div class="col-md-6 div-form">
+      <app-user-form [form]="profileForm" customClass="profile" button="Salvar alterações" [isProfileForm]="true"
+        (submit)="updateUser()">
+      </app-user-form>
+    </div>
+
+  </div>
+
+</div>
+<app-change-password [eventClick]="forgotPasswordEventClick"></app-change-password>

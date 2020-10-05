@@ -1,0 +1,62 @@
+
+<div class="container-fluid">
+
+  <div class="row">
+
+		<div class="col-md-4 tiltle">
+      <label class="tittle-meAccount">Minha carteira</label>
+    </div>
+    
+		<div class="col-md-4 saldo" >
+      <div class="wallet-atual">
+        <span class="balance"> Saldo atual R$ {{ numberFormat(accountBalance) }} </span>
+      </div>  
+    </div>
+
+   
+		<div class="col-md-4 buttons">
+      <div class="col buttons-group">
+        <button class="green-button-deposit" (click)="deposit()">
+          <img class="balance-img" src="../../../../assets/img/account_balance_wallet-white-18dp.svg"> Depositar
+        </button>
+        <button class="green-button-sacar" (click)="withdraw()">
+          <img class="mone-img" src="../../../../assets/img/monetization_on-white-18dp.svg">Sacar
+        </button>
+      </div>
+    </div>
+    
+	</div>
+
+	<div class="row">
+
+		<div class="col-md-12 div-list-account ">
+
+      <div class="add-account" (click)="addAccount()">
+        <img class="add-img" src="../../../../assets/img/add_24px.png" width="24">
+        <span class="label-add-account">Adicionar conta</span>
+      </div>
+  
+      <div class="col" *ngFor="let account of accounts">
+        <div class="bank-account">
+          <span class="bank-name" [innerHTML]="account.account_data.bank_name"></span>
+          <ul class="bank-data">
+            <li>Conta: {{ account.account_data.bank_name }}</li>
+            <li>Agencia: {{ account.account_data.agency }}</li>
+            <li>Tipo: {{ getOperationName(account.account_data.account_type) }}</li>
+          </ul>
+          <div class="bank-data-footer">
+            <div class="section-delete-account" (click)="deleteAccount(account.id)">
+              <img src="../../../../assets/img/delete_24px.png" width="24">
+              <span class="label-delete-account">Excluir conta</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+		</div>
+	</div>
+</div>
+
+<app-add-account [eventClick]="openModalAddAccount"></app-add-account>
+<app-deposit [eventClick]="openModalDeposit"  [products]="products"></app-deposit>
+<app-withdraw [eventClick]="openModalWithdraw" [accounts]="accounts"></app-withdraw>

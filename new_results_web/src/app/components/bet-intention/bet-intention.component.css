@@ -1,0 +1,441 @@
+a {
+  color: white;
+}
+
+.container-pre-ticket {
+  height: calc(100vh - 4.4em);
+  background-color: #151614;
+  width: 100%;
+}
+
+hr {
+  border-top: 1px solid rgba(109, 101, 101, 0.1);
+}
+
+.container-pre-values {
+  height: calc(100vh - 4.4em);
+  background-color: #232422;
+  width: 100%;
+}
+
+.back-button {
+  font-size: 1.1em;
+  width: 1.5em;
+  float: left;
+  z-index: 2;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+  
+}
+
+.title-text {
+  text-align: center;
+  width: 100%;
+  font-size: 1.6em;
+  color: #FCFFFD;
+  ;
+}
+
+.back-to-list {
+  color: #FCFFFD;
+  position: absolute;
+  left: 5%;
+  font-size: 0.8em;
+}
+
+.title-pre-ticket {
+  margin-top: 3%;
+  margin-left: 5%;
+  width: 100%;
+}
+
+.center-pre-ticket {
+  margin-top: 2%;
+}
+
+.right-pre-ticket {
+  color: #FCFFFD;
+  text-align: left;
+}
+
+.games-bet-check {
+  color: white;
+  margin-top: 4%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.container-list-games {
+  height: 35vh;
+  overflow: hidden;
+  overflow-y: auto;
+  margin-top: 1%;
+}
+
+.game-div {
+  background: #313230;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.tournament-and-time {
+  width: 50%;
+  color: #8C8C8C;
+  font-size: 0.8em;
+  margin-bottom: 0px;
+}
+
+.rate-name {
+  color: #FCFFFD;
+}
+
+.rate-value {
+  width: 25%;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 0px;
+}
+
+.games-bets-check {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.title-bets-game {
+  color: #FFFFFF;
+  font-size: 1.2em;
+  margin-left: 5%;
+}
+
+.qr-number {
+  color: #FCFFFD;
+}
+
+.img-label {
+  width: 100%;
+}
+
+.rate-span {
+  color: #FCFFFD;
+  padding: 10px 24px 10px 19px;
+  background: #151614;
+  border-radius: 8px;
+  margin-bottom: 0px;
+}
+
+.align-rate-value {
+  margin-left: 7%;
+}
+
+.game-name {
+  width: 100%
+}
+
+table.games-table th, table.games-table td {
+  padding: 20px;
+}
+
+table.games-table tr td:not(:first-child) {
+  text-align: center;
+  width: 40px;
+}
+
+.games-table thead tr th:not(:first-child) {
+  text-align: center;
+}
+
+.game td:first-child {
+  padding-left: 10px;
+  width: 75%;
+}
+
+.table-separate {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.btn-date {
+  color: #FCFFFD;
+  border: none;
+}
+
+.whats-button {
+  background: #4CAF50;
+  color: white;
+  padding: 7px 23px 9px 23px;
+  border-radius: 2px;
+  border: none;
+  font-size: 1.4em;
+}
+
+.telegram-button {
+  margin-left: 3%;
+  background: #1E88E5;
+  color: white;
+  padding: 4px 20px 4px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 2.2em;
+}
+
+.messenger-button {
+  margin-left: 3%;
+  background: #039BE5;
+  color: white;
+  padding: 4px 20px 4px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 2.2em;
+}
+
+table {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.table-separate {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.btn-rate {
+  background: #555854;
+  color: #FCFFFD;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.span-title {
+  color: #BDBDBD;
+}
+
+.btn-title {
+  color: #BDBDBD;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.span-rate {
+  padding: 8px;
+}
+
+.box-name-team {
+  color: #FCFFFD;
+  font-size: 1em;
+}
+
+.games-table thead tr th:first-child {
+  padding-left: 10px;
+  color: black;
+}
+
+table.table-home-away th, table.table-home-away td {
+  padding: 20px;
+}
+
+.th-same-children {
+  padding: 20px;
+  width: 40px;
+}
+
+table.games-table th, table.games-table td {
+  padding: 20px;
+}
+
+table.games-table tr td:not(:first-child) {
+  text-align: center;
+  width: 40px;
+}
+
+.games-table thead tr th:not(:first-child) {
+  text-align: center;
+}
+
+.game td:first-child {
+  padding-left: 10px;
+  width: 75%;
+}
+
+.game-date {
+  color: #71756F;
+}
+
+.teams {
+  display: block;
+  padding-right: 45px;
+}
+
+.plus-taxes {
+  float: right;
+  color: #0DE84A;
+  ;
+  text-decoration: none;
+  margin-top: -2%;
+}
+
+.active-rate {
+  background: #354538;
+  color: #0DE84A;
+  border: 0.5px solid;
+}
+
+.game {
+  background-color: #3B3D3A;
+}
+
+tr td:nth-child(1) {
+  border-top-left-radius: 10px;
+}
+
+tr td:nth-child(3) {
+  border-top-right-radius: 10px;
+}
+
+tr td:nth-child(1) {
+  border-bottom-left-radius: 10px;
+}
+
+tr td:nth-child(3) {
+  border-bottom-right-radius: 10px;
+}
+
+.span-information {
+  color: #FCFFFD;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.button-impress {
+  width: 90%;
+  margin-left: 5%;
+  padding: 13px;
+  background: transparent;
+  border: 1px solid #0DE84A;
+  color: #0DE84A;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  margin-top: 5%;
+}
+
+.flat-green-button {
+  width: 90%;
+  margin-left: 5%;
+  padding: 13px;
+  background: #0bb63b;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  margin-top: 5%;
+}
+
+.content-functions {
+  border-top: 1px solid #3B3D3A;
+}
+
+.buttons-div {
+  margin-top: 2%;
+}
+
+.title-information {
+  border-bottom: 1px solid #3B3D3A;
+  height: 6vh;
+}
+
+.content-information-bet {
+  margin-top: 5%;
+  color: white;
+}
+
+.content-information-bet>div>label {
+  width: 100%;
+}
+
+.border-div {
+  border-right: 1px solid #555854
+}
+
+.games-quantify {
+  font-weight: bold;
+}
+
+.span-value {
+  font-weight: bold;
+}
+
+.value-award {
+  font-weight: bold;
+}
+
+.row {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.text-pre {
+  margin-left: 1%;
+}
+
+.div-qr-code {
+  text-align: center;
+}
+
+@media screen and (max-width: 975px) {
+  table.games-table th, table.games-table td {
+    padding: 4px;
+  }
+  .game-date {
+    font-size: 0.7rem;
+  }
+  .div-games-scroll {
+    height: calc(100vh - 14.4em);
+  }
+  .game td:first-child {
+    padding-left: 10px;
+    width: 70%;
+  }
+  .back-to-list {
+    width: 100%;
+    text-align: left;
+    position: initial;
+  }
+  .qrcode {
+    text-align: center;
+  }
+  .center-pre-ticket {
+    flex-wrap: wrap;
+  }
+  .right-pre-ticket {
+    text-align: center;
+  }
+  .qr-number {
+    width: 100%;
+    text-align: center;
+  }
+  .text-pre {
+    margin-left: 3%;
+  }
+  .div-qr-code {
+    text-align: center;
+  }
+  .box-name-team {
+    font-size: 0.8em;
+  }
+  .container-pre-values {
+    height: auto;
+  }
+  .games-bets-check {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+  .container-list-games {
+    overflow: auto;
+    height: auto;
+  }
+  .container-pre-ticket {
+    height: auto;
+  }
+}

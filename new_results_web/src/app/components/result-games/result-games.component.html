@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    
+    <div class="row">
+
+		<div class="col-md-12 div-result-games">
+
+     <ul>
+
+    <li *ngFor="let tournament of tournamentResults">
+
+
+       <span class="tournament"> {{ tournament.tournamentName }}  </span> 
+    
+       <span class="country"> {{ tournament.countryname }} </span>
+
+        <ul>
+          
+            <li class="games-results" *ngFor="let game of tournament.games">
+
+             <label class="placar-style-home"> {{ game.results[2].home }} </label> <label class="games-results-home">  {{ game.home }} </label><br>
+             <label class="placar-style-away"> {{ game.results[2].away }} </label>  <label class="games-results-away">  {{ game.away }} </label>
+             <div class="div-linha-games"></div>  
+
+            </li>
+  
+      
+        </ul>
+    
+    </li>
+ 
+        
+</ul>
+
+		</div>
+	</div>
+    
+</div>
+
