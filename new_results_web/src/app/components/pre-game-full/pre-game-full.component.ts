@@ -39,7 +39,7 @@ export class PreGameFullComponent implements OnInit, OnDestroy, AfterViewInit {
     setInterval(() => {
 
       el.click();
-    }, 5000);
+    }, 8000);
 }
 
 

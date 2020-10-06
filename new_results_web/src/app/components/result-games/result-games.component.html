@@ -1,38 +1,52 @@
 <div class="container-fluid">
-    
+
     <div class="row">
 
-		<div class="col-md-12 div-result-games">
+        <div class="col-md-12 div-result-games">
 
-     <ul>
+            <div class="carousel slide" id="carousel-590615">
 
-    <li *ngFor="let tournament of tournamentResults">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item " [class.active]="activeCarousel === i"
+                        *ngFor="let tournamentTwoGames of tournamentJustOneGameNew; let i = index">
+                        <div class="row">
+
+                            <div class="col-md-12 " *ngFor="let tournament of  tournamentTwoGames">
+
+                                <span class="tournament"> {{ tournament.tournament }} </span>
+
+                                <span class="country"> {{ tournament.country }} </span>
+
+                                <ul>
+
+                                    <li class="games-results">
+
+                                        <label class="placar-style-home"> {{ tournament.game.results[2].home }} </label>
+                                        <label class="games-results-home"> {{ tournament.game.home }} </label><br>
+                                        <label class="placar-style-away"> {{ tournament.game.results[2].away }} </label>
+                                        <label class="games-results-away"> {{ tournament.game.away }} </label>
+                                        <div class="div-linha-games"></div>
+
+                                    </li>
 
 
-       <span class="tournament"> {{ tournament.tournamentName }}  </span> 
-    
-       <span class="country"> {{ tournament.countryname }} </span>
+                                </ul>
 
-        <ul>
-          
-            <li class="games-results" *ngFor="let game of tournament.games">
+                            </div>
 
-             <label class="placar-style-home"> {{ game.results[2].home }} </label> <label class="games-results-home">  {{ game.home }} </label><br>
-             <label class="placar-style-away"> {{ game.results[2].away }} </label>  <label class="games-results-away">  {{ game.away }} </label>
-             <div class="div-linha-games"></div>  
 
-            </li>
-  
-      
-        </ul>
-    
-    </li>
- 
-        
-</ul>
+                        </div>
 
-		</div>
-	</div>
-    
+                    </div>
+
+                </div>
+
+            </div> <a class="carousel-control-prev" href="#carousel-590615" data-slide="prev">
+                    <span class="sr-only">Previous</span></a> <a
+                    #start class="carousel-control-next" href="#carousel-590615" data-slide="next">
+                    <span class="sr-only">Next</span></a>
+        </div>
+
+    </div>
 </div>
-

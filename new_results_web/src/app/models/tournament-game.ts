@@ -8,3 +8,4 @@ export class TournamentGame {
     auxFind?: string;
     auxId?: string;
 }
+

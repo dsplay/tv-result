@@ -32,43 +32,72 @@ position: fixed;
 
 }
 
+.div-color-odd{
+
+  background-color: #3B3D3A;
+  width: 93%;
+  height: 63%;
+  max-width: 93%;
+  max-height: 63%; 
+  border-radius: 8px;
+
+}
+
 .div-linha {
 
   border-right: 1px solid rgb(128, 127, 127);
   margin-top: -14%;
   width: 0%;
-  margin-left: -10%;
+  margin-left: -5%;
   margin-right: 12%;
   height: 30%;
   padding-top: 17%;
   
   }
 
-.placar-style {
-
-background: #555854;
-color: #fcfffd;
-border-radius: 8px;
-font-size: 20px;
-padding: 6px;
-margin-right: 2%;
-
-
-
-}
 
 .placar-style-casa {
 
-  background: #555854;
-  color: #fcfffd;
+  background: #1E1C1C;
+  color: #ffd643;
   border-radius: 8px;
-  font-size: 20px;
+  font-size: 24px;
   padding: 6px;
-  margin-right: 2%;
-  margin-left: 59%;  
+  margin-right: 0%;
+  margin-left: 61%;  
 
 
 }
+
+.placar-style-empate {
+
+  background: #1E1C1C;
+  color: #ffd643;
+  border-radius: 8px;
+  font-size: 24px;
+  padding: 6px;
+  margin-left: 1%;
+  
+  
+  }
+
+  
+.placar-style-fora {
+
+  background: #1E1C1C;
+  color: #ffd643;
+  border-radius: 8px;
+  font-size: 24px;
+  padding: 6px;
+  margin-left: 1%;
+  
+  
+  
+  }
+  
+  
+
+
 
 .carousel {
 
@@ -82,7 +111,7 @@ margin-right: 2%;
  padding-left: 38.5%;
  margin-right: 2%;
  margin-top: 1%;
- font-size: 18px;
+ font-size: 24px;
  margin-left: 22%;
 
 }
@@ -92,7 +121,7 @@ margin-right: 2%;
 
   margin-right: 2%;
   margin-top: 1%;
-  font-size: 18px;
+  font-size: 24px;
  
  }
  
@@ -100,10 +129,12 @@ margin-right: 2%;
 .visibleDate {
 
   display: flex;
-  justify-content: center;
-  font-size: 24px;
-  margin-left: 43%;
-  margin-top: -10%;
+  font-size: 16px;
+  margin-left: 0%;
+  margin-top: 7%;
+  position: absolute;
+  padding: 1%;
+  
 
 }
 
@@ -134,23 +165,23 @@ margin-right: 2%;
 
   color: #ffd643;
   display: flex;
-  justify-content: center;
-  font-size: 26px;
-  margin-right: 52%;
-  margin-top: 2%;
+  font-size: 24px;
+  margin-top: 1%;
+  margin-bottom: 1%;
 
 
 }
 
 .text-light-vs {
 
-  display: flex;
-  justify-content: center;
-  margin-top: 1%;
-  color: #ffd643;
-  font-size: 26px;
-  margin-right: 52%;
 
+  margin-top: 0%;
+  font-size: 22px;
+  margin-right: 60%;
+  display: flex;
+  position: absolute;
+  letter-spacing: 1px;
+  padding: 1%;
 
 }
 

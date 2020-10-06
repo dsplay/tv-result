@@ -14,20 +14,24 @@
                             <div class="col-md-6 " *ngFor="let tournament of tournamentTwoGames">
 
                                 <h5 class="text-light-tournament"> {{ tournament.name }} </h5>
+                            
+                                <h5 class="visibleDate"> {{ tournament.game.visibleDate }} </h5>
 
                                 <h5 class="text-light-vs"> {{ tournament.game.homeTeam }} X
                                     {{ tournament.game.awayTeam }} </h5>
 
-                                <h5 class="visibleDate"> {{ tournament.game.visibleDate }} </h5>
+                                <div class="div-color-odd">
                                 <table class="">
                                     <tbody>
                                         <tr>
+
+
                                             <td class="rate">
 
                                                 <span class="title-casa"> Casa </span>
-                                                <span class="title"> Empate </span>
+                                                <span class="title"> Empt </span>
                                                 <span class="title"> Fora </span> <br>
-
+                                               
                                                 <span
                                                     *ngIf="verifyHasThisRate(1, tournament.game.rates); else buttonWithoutValueOne; let rateGame"
                                                     class="placar-style-casa">
@@ -37,14 +41,14 @@
                                                 </ng-template>
                                                 <span
                                                     *ngIf="verifyHasThisRate(2, tournament.game.rates); else buttonWithoutValueOne; let rateGame"
-                                                    class="placar-style">
+                                                    class="placar-style-empate">
                                                     {{ getRateDecimal( rateGame.value ) }} </span>
                                                 <ng-template #buttonWithoutValueTwo>
                                                     <span class="placar-style">  - </span>
                                                 </ng-template>
                                                 <span
                                                     *ngIf="verifyHasThisRate(3, tournament.game.rates); else buttonWithoutValueOne; let rateGame"
-                                                    class="placar-style">
+                                                    class="placar-style-fora">
                                                     {{ getRateDecimal( rateGame.value ) }} </span>
                                                 <ng-template #buttonWithoutValueThree>
                                                     <span class="placar-style">  - </span>
@@ -55,6 +59,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                                </div>
                                 <div class="div-linha"></div>
                             </div>
 
@@ -67,6 +72,7 @@
                        <span class="sr-only">Next</span></a>
 
                 </div>
+                <div>
             </div>
         </div>
     </div>
