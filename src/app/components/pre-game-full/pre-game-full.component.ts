@@ -3,7 +3,6 @@ import { DataService } from 'src/app/services/data.service';
 import { Game } from 'src/app/models/game';
 import { TournamentGame } from 'src/app/models/tournament-game';
 import { GameRate } from 'src/app/models/game-rate';
-import { BetService } from 'src/app/services/bet.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { SubSink } from 'subsink';
 import { ResultService } from '../../services/result.service';
@@ -43,7 +42,7 @@ export class PreGameFullComponent implements OnInit, OnDestroy, AfterViewInit {
 }
 
 
-  constructor(private dataService: DataService, private betService: BetService, private resultService: ResultService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private dataService: DataService, private resultService: ResultService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
 
@@ -241,18 +240,9 @@ export class PreGameFullComponent implements OnInit, OnDestroy, AfterViewInit {
     return this.router.url.indexOf('date') > 0;
   }
 
-
-  addBet(game: Game, rate: GameRate): void {
-    this.betService.addBet(game, rate);
-  }
-
   verifyHasThisRate(idRate: number, rates: GameRate[]): any {
     const rate = rates.find(rt => rt.id === idRate);
     return rate !== undefined ? rate : false;
-  }
-
-  verifHasInCurrentBet(game: Game, rate: GameRate): boolean {
-    return this.betService.verifyHasThisRate(game, rate);
   }
 
   detailGame(gameId: number) {
