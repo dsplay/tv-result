@@ -11,31 +11,30 @@ import { TournamentGameResult } from 'src/app/models/tournament-game-result';
 })
 export class ResultGamesComponent implements OnInit {
 
-  tournamentResults: TournamentGameResult [] = [];
+  tournamentResults: TournamentGameResult[] = [];
   activeCarousel = 0;
   private subs = new SubSink();
   tournamentJustOneGame = [];
   tournamentJustOneGameNew = [];
   tournamentJustOneGameAuxiliary = [];
- 
+
 
   constructor(private resultResult: ResultService) { }
 
-  @ViewChild ( 'start' )  start : ElementRef<HTMLElement>;
+  @ViewChild('start') start: ElementRef<HTMLElement>;
 
   triggerFalseClick() {
-    let el: HTMLElement = this.start.nativeElement;
+    const el: HTMLElement = this.start.nativeElement;
     setInterval(() => {
-
       el.click();
     }, 8000);
-}
+  }
 
   ngOnInit(): void {
 
     this.subs.sink = this.resultResult.currentGamesWithResult.subscribe(result => {
-      
-      this.tournamentResults = result
+
+      this.tournamentResults = result;
       this.tournamentResults.forEach(tournament => {
         tournament.games.forEach(game => {
 
@@ -44,15 +43,10 @@ export class ResultGamesComponent implements OnInit {
               tournament: tournament.tournamentName,
               country: tournament.countryname,
               game
-              
             }
           );
         });
       });
-      
-      this.tournamentJustOneGameNew;
-      this.tournamentJustOneGameAuxiliary;
-      console.log(this.tournamentJustOneGame)
 
 
       if (this.tournamentJustOneGame.length % 4 === 0) {
@@ -84,22 +78,15 @@ export class ResultGamesComponent implements OnInit {
 
         });
 
-        let arrayLast = [this.tournamentJustOneGame.pop()];
+        const arrayLast = [this.tournamentJustOneGame.pop()];
         this.tournamentJustOneGameNew.push(arrayLast);
       }
-
-
-      console.log(this.tournamentJustOneGameNew)
-
     });
 
   }
 
-
   ngAfterViewInit() {
-
     this.triggerFalseClick();
-
   }
 
 }

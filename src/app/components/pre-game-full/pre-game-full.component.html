@@ -24,15 +24,13 @@
                                 <table class="">
                                     <tbody>
                                         <tr>
-
-
                                             <td class="rate">
 
                                                 <span class="title-casa"> Casa </span>
                                                 <span class="title"> Empt </span>
                                                 <span class="title"> Fora </span> <br>
                                                
-                                                <span
+                                                <span 
                                                     *ngIf="verifyHasThisRate(1, tournament.game.rates); else buttonWithoutValueOne; let rateGame"
                                                     class="placar-style-casa">
                                                     {{ getRateDecimal( rateGame.value ) }} </span>
